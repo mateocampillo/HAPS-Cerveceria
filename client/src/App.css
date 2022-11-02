@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+/* *{
+  outline: red 1px solid;
+} */
+
+.min-width-200px{
+  min-width: 140px;
+}
+
+.w-70{
+  width: 70%;
+}
+
+/* body {
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+} */
+
+.hrConTexto-h-divider {
+  margin: auto;
+  margin-top: 30px;
+  width: 80%;
+  position: relative;
+}
+
+.hrConTexto-h-divider .hrConTexto-shadow {
+  overflow: hidden;
+  height: 20px;
+}
+
+.hrConTexto-h-divider .hrConTexto-shadow:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px black;
+}
+
+.dashboard-sidebar_borderright{
+  border-right: 5px solid rgb(101, 240, 147);
+  border-radius: 5px;
+}
