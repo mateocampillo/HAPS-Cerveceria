@@ -14,7 +14,7 @@ function DashboardCervezasList () {
     return (
         <div>
             <h2 className='mb-2'>Listado de Cervezas</h2>
-            <table class="table">
+            <table className="table">
                 <thead>
                     <tr>
                     <th scope="col">#</th>
@@ -31,9 +31,9 @@ function DashboardCervezasList () {
                                 <td><strong>{cerveza.nombre}</strong></td>
                                 <td className='w-70'>{cerveza.descripcion}</td>
                                 <td>
-                                <button type="button" class="btn btn-primary mx-1 my-1">Detalle</button>
-                                <button type="button" class="btn btn-success mx-1 my-1">Editar</button>
-                                <button type="button" class="btn btn-danger mx-1 my-1">Borrar</button>
+                                <button type="button" className="btn btn-primary mx-1 my-1">Detalle</button>
+                                <button type="button" className="btn btn-success mx-1 my-1">Editar</button>
+                                <button type="button" className="btn btn-danger mx-1 my-1">Borrar</button>
                                 </td>
                             </tr>
                         )
