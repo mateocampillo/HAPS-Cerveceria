@@ -6,14 +6,6 @@
   outline: red 1px solid;
 } */
 
-.min-width-200px{
-  min-width: 140px;
-}
-
-.w-70{
-  width: 70%;
-}
-
 /* body {
   background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -22,29 +14,80 @@
   -o-background-size: cover;
 } */
 
-.hrConTexto-h-divider {
-  margin: auto;
-  margin-top: 30px;
-  width: 80%;
-  position: relative;
+body{
+  height: 100vh;
+  margin: 0px;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
 }
 
-.hrConTexto-h-divider .hrConTexto-shadow {
-  overflow: hidden;
-  height: 20px;
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
-.hrConTexto-h-divider .hrConTexto-shadow:after {
-  content: '';
-  display: block;
-  margin: -25px auto 0;
-  width: 100%;
-  height: 25px;
-  border-radius: 125px/12px;
-  box-shadow: 0 0 8px black;
+#header{
+  position: absolute;
+  z-index: 20;
+  width: 100vw;
+}
+
+#container-header-navLinks{
+  display: none;
+  flex-grow: 0;
+}
+#container-header-navLinks2{
+  display: none;
+  flex-grow: 0;
+}
+
+#header-ul{
+  list-style-type: none;
+}
+
+#header-ul a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1vh 3vw;
+  margin: 0px 1vw;
+}
+
+
+.navbar-icono-svg{
+  color: white;
+}
+
+.carousel-item img{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.boton-carousel{
+  transform: translateY(50%);
+  height: 50%;
+}
+
+#homeBannerCervezaAnimada{
+  height: 100vh;
 }
 
 .dashboard-sidebar_borderright{
   border-right: 5px solid rgb(101, 240, 147);
   border-radius: 5px;
+}
+
+@media (min-width: 915px){
+  #container-header-botonMenu{
+    display: none;
+  }
+  
+  #container-header-navLinks{
+    display: block;
+  }
+  #container-header-navLinks2{
+    display: block;
+  }
+
 }
