@@ -1,6 +1,6 @@
 import React from 'react';
 import HomeCarousel from './HomeCarousel';
-import HomeBannerCervezaAnimada from './HomeBannerCervezaAnimada';
+import HomeSomosCaps from './HomeSomosCaps';
 import Navbar from '../utils/Navbar/Navbar';
 
 function HomeContainer() {
@@ -10,7 +10,7 @@ function HomeContainer() {
             <Navbar />
             <main>
                 <HomeCarousel />
-                <HomeBannerCervezaAnimada />
+                <HomeSomosCaps />
             </main>
         </div>
     )

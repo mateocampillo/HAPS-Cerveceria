@@ -6,14 +6,6 @@
   outline: red 1px solid;
 } */
 
-/* body {
-  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-} */
-
 body{
   height: 100vh;
   margin: 0px;
@@ -58,6 +50,23 @@ body::-webkit-scrollbar {
   color: white;
 }
 
+#dropdown-menu{
+  width: 85vw;
+  background-color: black;
+}
+
+#dropdown-menu li{
+background-color: black;
+}
+
+#dropdown-menu a{
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+
 .carousel-item img{
   height: 100vh;
   width: 100vw;
@@ -69,13 +78,28 @@ body::-webkit-scrollbar {
   height: 50%;
 }
 
-#homeBannerCervezaAnimada{
+#homeSomosHaps{
+  position: relative;
+  height: 100vh;
+  background-image: url('../public/img/fondoHomeSomosHaps.jpg');
+} 
+
+#container-somos-haps{
   height: 100vh;
 }
+
 
 .dashboard-sidebar_borderright{
   border-right: 5px solid rgb(101, 240, 147);
   border-radius: 5px;
+}
+
+@media (min-width: 530px){
+
+  #dropdown-menu{
+    width: 75vw;
+  }
+
 }
 
 @media (min-width: 915px){
@@ -88,6 +112,31 @@ body::-webkit-scrollbar {
   }
   #container-header-navLinks2{
     display: block;
+  }
+
+}
+
+@media (max-width: 914px){
+
+  #flex-somos-haps{
+    flex-direction: column;
+  }
+
+  #homeSomosHaps{
+    background: url('../public/img/600x400-placeholder.png') no-repeat center fixed;
+    background-size: cover;
+  } 
+
+  #somos-haps-div-foto{
+    display: none;
+  }
+
+}
+
+@media (max-width: 1200px){
+
+  #flex-somos-haps{
+    flex-direction: column;
   }
 
 }
