@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeCarousel from './HomeCarousel';
 import HomeSomosCaps from './HomeSomosCaps';
+import HomeSwiperCervezas from './HomeSwiperCervezas';
 import Navbar from '../utils/Navbar/Navbar';
 
 function HomeContainer() {
@@ -11,6 +12,7 @@ function HomeContainer() {
             <main>
                 <HomeCarousel />
                 <HomeSomosCaps />
+                <HomeSwiperCervezas />
             </main>
         </div>
     )

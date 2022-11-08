@@ -88,6 +88,50 @@ background-color: black;
   height: 100vh;
 }
 
+#HomeSwiperCervezas{
+  position: relative;
+  height: 100vh;
+}
+
+#Swiper-Container{
+  height: 100vh;
+}
+
+.container-slide{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.container-slide h2{
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.container-slide p{
+  text-align: center;
+}
+
+
+#container-slide1{
+  background: url('../public/img/black1920x1080.png') center;
+}
+#container-slide2{
+  background: url('../public/img/1920x1080-placeholder.jpg') center;
+}
+#container-slide3{
+  background: url('../public/img/1920x1080-placeholder-b.jpg') center;
+}
+#container-slide4{
+  background: url('../public/img/1920x1080-placeholder.jpg') center;
+}
+.swiper-pagination-bullet{
+  background: #fff !important;
+  width: 15px !important;
+  height: 15px !important;
+}
 
 .dashboard-sidebar_borderright{
   border-right: 5px solid rgb(101, 240, 147);
@@ -102,17 +146,56 @@ background-color: black;
 
 }
 
+@media (min-width: 700px){
+
+  .container-slide{
+    padding: 0px 50px;
+  }
+  .container-slide h2{
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  .container-slide p{
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 10px 0px 30px;
+  }
+
+}
+
 @media (min-width: 915px){
   #container-header-botonMenu{
     display: none;
   }
-  
   #container-header-navLinks{
     display: block;
   }
   #container-header-navLinks2{
     display: block;
   }
+
+  .container-slide{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 40px;
+    
+  }
+  
+  .container-slide h2{
+    margin-left: 60px;
+  }
+  .container-slide p{
+    text-align: left;
+    margin-left: 60px;
+    width: 30%;
+  }
+  .boton-swiper{
+    margin-left: 60px;
+  }
+  
 
 }
 
@@ -123,7 +206,7 @@ background-color: black;
   }
 
   #homeSomosHaps{
-    background: url('../public/img/600x400-placeholder.png') no-repeat center fixed;
+    background: url('../public/img/600x400-placeholder.png') no-repeat center;
     background-size: cover;
   } 
 
