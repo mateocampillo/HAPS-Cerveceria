@@ -2,7 +2,8 @@ import React from 'react';
 import HomeCarousel from './HomeCarousel';
 import HomeSomosCaps from './HomeSomosCaps';
 import HomeSwiperCervezas from './HomeSwiperCervezas';
-import Navbar from '../utils/Navbar/Navbar';
+import Navbar from '../utils/Navbar';
+import Footer from '../utils/Footer';
 
 function HomeContainer() {
 
@@ -14,6 +15,7 @@ function HomeContainer() {
                 <HomeSomosCaps />
                 <HomeSwiperCervezas />
             </main>
+            <Footer />
         </div>
     )
 }

@@ -66,7 +66,6 @@ background-color: black;
   background-color: black;
 }
 
-
 .carousel-item img{
   height: 100vh;
   width: 100vw;
@@ -133,6 +132,53 @@ background-color: black;
   height: 15px !important;
 }
 
+#footer{
+  position: relative;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+#footer-container-ul{
+  flex-grow: 0.3;
+}
+
+.footer-ul{
+  list-style-type: none;
+  height: 100%;
+  padding-left: 0px;
+}
+
+.footer-ul li{
+  border: 1px solid #000;
+  border-radius: 15px;
+  width: 90%;
+}
+
+.footer-ul a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 15px auto;
+  width: 100%;
+}
+
+#footer-container-iconos{
+  display: flex;
+}
+
+.footer-icono-svg{
+  width: 23%;
+}
+
+#footer-desktop-container-iconos{
+  display: none;
+}
+
+#footer-desktop-container-ul{
+  display: none;
+}
+
 .dashboard-sidebar_borderright{
   border-right: 5px solid rgb(101, 240, 147);
   border-radius: 5px;
@@ -142,6 +188,10 @@ background-color: black;
 
   #dropdown-menu{
     width: 75vw;
+  }
+
+  .footer-ul li{
+    width: 70%;
   }
 
 }
@@ -159,6 +209,14 @@ background-color: black;
     font-size: 1.1rem;
     text-align: center;
     margin: 10px 0px 30px;
+  }
+
+  .footer-ul li{
+    width: 50%;
+  }
+
+  .footer-icono-svg{
+    width: 17%;
   }
 
 }
@@ -195,7 +253,57 @@ background-color: black;
   .boton-swiper{
     margin-left: 60px;
   }
-  
+
+  #footer{
+    height: 45vh;
+    width: 80vw;
+    margin: auto;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  #footer div{
+    margin: 30px 0px;
+  }
+
+  #footer-container-logo{
+    align-self: flex-start;
+  }
+
+  #footer-container-iconos{
+    display: none;
+  }
+
+  #footer-desktop-container-iconos{
+    display: flex;
+    width: 20%;
+  }
+
+  .footer-icono-desktop-svg{
+    width: 50%;
+  }
+
+  #footer-container-ul{
+    display: none;
+  }
+
+  #footer-desktop-container-ul{
+    display: block;
+    position: absolute;
+    right: 10%;
+    width: 40%;
+  }
+
+  #footer-desktop-container-ul li{
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  #footer-container-copyright{
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+  }
 
 }
 
