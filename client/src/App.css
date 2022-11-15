@@ -143,6 +143,8 @@ background-color: black;
   position: relative;
   height: 100vh;
   justify-content: space-around;
+  background: url('https://images.unsplash.com/photo-1534655882117-f9eff36a1574?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80');
+  background-size: cover;
 }
 
 #footer-container-ul{
@@ -156,14 +158,14 @@ background-color: black;
 }
 
 .footer-ul li{
-  border: 1px solid #000;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 15px;
   width: 90%;
 }
 
 .footer-ul a{
   text-decoration: none;
-  color: #000;
+  color: rgb(255, 255, 255);
   font-size: 1.4rem;
   font-weight: 500;
   padding: 15px auto;
@@ -176,6 +178,7 @@ background-color: black;
 
 .footer-icono-svg{
   width: 23%;
+  fill: #fff;
 }
 
 #footer-desktop-container-iconos{
@@ -184,6 +187,10 @@ background-color: black;
 
 #footer-desktop-container-ul{
   display: none;
+}
+
+#footer-container-copyright{
+  color: #fff;
 }
 
 .dashboard-sidebar_borderright{
@@ -263,14 +270,16 @@ background-color: black;
 
   #footer{
     height: 45vh;
-    width: 80vw;
+    width: 100vw;
     margin: auto;
     justify-content: center;
     padding: 0px;
+    background: url('https://images.unsplash.com/photo-1558565851-10a41b286adb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
   }
 
   #footer div{
-    margin: 30px 0px;
+    margin: 30px 40px;
   }
 
   #footer-container-logo{
@@ -287,7 +296,8 @@ background-color: black;
   }
 
   .footer-icono-desktop-svg{
-    width: 50%;
+    width: 45%;
+    fill: #fff
   }
 
   #footer-container-ul{
@@ -312,6 +322,13 @@ background-color: black;
     right: 50%;
   }
 
+  #footer-container-copyright span{
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+
+
 }
 
 @media (max-width: 914px){
@@ -321,9 +338,20 @@ background-color: black;
   }
 
   #homeSomosHaps{
-    background: url('../public/img/600x400-placeholder.png') no-repeat center;
+    background: url('https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center;
     background-size: cover;
   } 
+
+  #container-somos-haps_descripcion h2{
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  #container-somos-haps_descripcion p{
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
 
   #somos-haps-div-foto{
     display: none;
