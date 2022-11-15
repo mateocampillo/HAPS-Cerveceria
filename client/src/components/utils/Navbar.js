@@ -3,8 +3,8 @@ import React from 'react';
 function Navbar() {
 
     return (
-        <header className='bg-transparent position-absolute' id='header'>
-            <div className='d-flex position-relative justify-content-around align-items-center mt-5 text-center'>
+        <header id='header'>
+            <div className='d-flex position-relative justify-content-around align-items-center text-center w-100'>
                 <div id='container-header-botonMenu' className='dropdown'>
                     <button className='bg-transparent border border-0 p-3' data-bs-toggle="dropdown" data-bs-offset="10,20"><i className="fa-solid fa-bars fa-2x navbar-icono-svg"></i></button>
                     <ul className='dropdown-menu container-fluid' id='dropdown-menu'>
